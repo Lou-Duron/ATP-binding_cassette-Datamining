@@ -1,6 +1,6 @@
 # Intro
 
-This project was made by Lou DURON and Etienne BARDET in order to create and evaluate an annotation method in terms of ABC transporters in procaryote complete genomes.
+This project was made by Lou DURON and Etienne BARDET as a assignment of the Datamining course of the Bioinformatics Master Degree of Paul-Sabatier University. The goal of this projet is to create and evaluate an annotation method in terms of ABC transporters in procaryote complete genomes.
 
 # Documentation
 
@@ -13,9 +13,9 @@ Create .csv file(s) from the database for annotation method training and testing
   *-u, --user=STRING*   username for the mysql database  
   -p, --password=STRING   password for the mysql database 
   
-**Optionnal arguments :**  
+**Optional arguments :**  
   -a, --abc   creates a .csv file for the ABC annotation (abc.csv)  
-  -b, --sub   creates a .csv file for the ABC subfamilies annotation (sufamilies.csv)  
+  -b, --sub   creates a .csv file for the ABC subfamilies annotation (subfamilies.csv)  
   -s, --score=30   minimal score for domain recovery  
   -n, --nb_domain=10    minimal number of occurence in gene dataset of each domains  
   
@@ -29,12 +29,12 @@ With this setting, will create 2 csv file :
 ## Annotation.py
 
 **Usage :** Annotation.py -d [FILE] [OPTION]  
-Creates and evaluates classifiaction models for abc and abc subfamilies annotation
+Creates and evaluates classification models for abc and abc subfamilies annotation
 
 **Mandatory arguments :**  
   -d, --data   .csv file with dataset (abc.csv for abc annotation and subfamilies.csv for subfamilies annotation)
   
-**Optionnal arguments :**  
+**Optional arguments :**  
   -t, --tree    decision tree algorithm  
   -g, --gaussian    gaussian naive Bayes algorithm  
   -b, --bernoulli   bernoulli naive Bayes algorithm  
